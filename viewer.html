@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Configurator - px-kitchen-blender</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .controls {
+            padding: 30px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .control-group {
+            margin-bottom: 20px;
+        }
+
+        .control-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #495057;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 1em;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        select:hover {
+            border-color: #667eea;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .view-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .view-button {
+            padding: 12px 20px;
+            background: white;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .view-button:hover {
+            background: #f8f9fa;
+            border-color: #667eea;
+            transform: translateY(-2px);
+        }
+
+        .view-button.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-color: #667eea;
+        }
+
+        .viewer {
+            padding: 30px;
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .render-container {
+            width: 100%;
+            max-width: 1200px;
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .render-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+
+        .render-info {
+            margin-top: 20px;
+            text-align: center;
+            color: #6c757d;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: #6c757d;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error {
+            color: #dc3545;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .info-badge {
+            display: inline-block;
+            background: #e9ecef;
+            padding: 6px 12px;
+            border-radius: 6px;
+            margin: 5px;
+            font-size: 0.9em;
+            color: #495057;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .controls {
+                padding: 20px;
+            }
+
+            .view-buttons {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏠 Kitchen Configurator</h1>
+            <p>Explore 16 different kitchen styles with 5 camera views each</p>
+        </header>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="door-style">Cabinet Door Style</label>
+                <select id="door-style">
+                    <option value="">Loading...</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="countertop-style">Countertop & Backsplash</label>
+                <select id="countertop-style">
+                    <option value="">Loading...</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>Camera View</label>
+                <div class="view-buttons" id="view-buttons"></div>
+            </div>
+        </div>
+
+        <div class="viewer" id="viewer">
+            <div class="loading">
+                <div class="loading-spinner"></div>
+                <p>Loading kitchen configurator...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Application state
+        let manifest = null;
+        let currentDoorStyle = null;
+        let currentCountertopStyle = null;
+        let currentView = 'KITCHEN_WIDE';
+
+        // Load manifest on page load
+        async function loadManifest() {
+            try {
+                const response = await fetch('viewer_manifest.json');
+                manifest = await response.json();
+                initializeUI();
+            } catch (error) {
+                showError('Failed to load viewer manifest. Make sure viewer_manifest.json exists in the same directory.');
+                console.error(error);
+            }
+        }
+
+        // Initialize UI with manifest data
+        function initializeUI() {
+            // Populate door style dropdown
+            const doorSelect = document.getElementById('door-style');
+            doorSelect.innerHTML = '';
+            manifest.door_styles.forEach((style, index) => {
+                const option = document.createElement('option');
+                option.value = style;
+                option.textContent = style;
+                doorSelect.appendChild(option);
+                if (index === 0) currentDoorStyle = style;
+            });
+
+            // Populate countertop style dropdown
+            const countertopSelect = document.getElementById('countertop-style');
+            countertopSelect.innerHTML = '';
+            manifest.countertop_styles.forEach((style, index) => {
+                const option = document.createElement('option');
+                option.value = style;
+                option.textContent = style;
+                countertopSelect.appendChild(option);
+                if (index === 0) currentCountertopStyle = style;
+            });
+
+            // Create view buttons
+            const viewButtons = document.getElementById('view-buttons');
+            viewButtons.innerHTML = '';
+            manifest.camera_views.forEach(view => {
+                const button = document.createElement('button');
+                button.className = 'view-button';
+                button.textContent = view.replace('KITCHEN_', '');
+                button.dataset.view = view;
+                if (view === currentView) button.classList.add('active');
+                button.addEventListener('click', () => selectView(view));
+                viewButtons.appendChild(button);
+            });
+
+            // Add event listeners
+            doorSelect.addEventListener('change', (e) => {
+                currentDoorStyle = e.target.value;
+                updateRender();
+            });
+
+            countertopSelect.addEventListener('change', (e) => {
+                currentCountertopStyle = e.target.value;
+                updateRender();
+            });
+
+            // Show initial render
+            updateRender();
+        }
+
+        // Select a camera view
+        function selectView(view) {
+            currentView = view;
+            
+            // Update button states
+            document.querySelectorAll('.view-button').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.view === view);
+            });
+
+            updateRender();
+        }
+
+        // Update the render display
+        function updateRender() {
+            const bundle = manifest.bundles.find(b =>
+                b.door_style === currentDoorStyle &&
+                b.countertop_style === currentCountertopStyle
+            );
+
+            if (!bundle) {
+                showError('Bundle not found');
+                return;
+            }
+
+            const viewData = bundle.views.find(v => v.view === currentView);
+            if (!viewData) {
+                showError('View not found');
+                return;
+            }
+
+            showRender(viewData, bundle);
+        }
+
+        // Show a render
+        function showRender(viewData, bundle) {
+            const viewer = document.getElementById('viewer');
+            viewer.innerHTML = `
+                <div class="render-container">
+                    <img src="${viewData.filename}" 
+                         alt="${viewData.description}" 
+                         class="render-image"
+                         onload="this.style.opacity='1'"
+                         style="opacity: 0">
+                </div>
+                <div class="render-info">
+                    <div>
+                        <span class="info-badge">${bundle.door_style}</span>
+                        <span class="info-badge">${bundle.countertop_style}</span>
+                        <span class="info-badge">${viewData.view}</span>
+                    </div>
+                    <p style="margin-top: 10px;">${viewData.description}</p>
+                </div>
+            `;
+        }
+
+        // Show error message
+        function showError(message) {
+            const viewer = document.getElementById('viewer');
+            viewer.innerHTML = `<div class="error">${message}</div>`;
+        }
+
+        // Initialize when DOM is ready
+        document.addEventListener('DOMContentLoaded', loadManifest);
+    </script>
+</body>
+</html>
