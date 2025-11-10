@@ -1,0 +1,104 @@
+{
+  "blender_mcp": {
+    "host": "localhost",
+    "port": 9876,
+    "timeout": 30
+  },
+  "output": {
+    "directory": "./renders",
+    "format": "WEBP",
+    "quality": 90
+  },
+  "render": {
+    "engine": "CYCLES",
+    "samples": 128,
+    "resolution": {
+      "width": 1920,
+      "height": 1080
+    },
+    "use_gpu": false
+  },
+  "door_styles": [
+    {
+      "id": "shaker",
+      "name": "Shaker",
+      "color": [0.9, 0.9, 0.85, 1.0],
+      "roughness": 0.3
+    },
+    {
+      "id": "modern_flat",
+      "name": "Modern Flat",
+      "color": [0.2, 0.2, 0.2, 1.0],
+      "roughness": 0.25
+    },
+    {
+      "id": "raised_panel",
+      "name": "Raised Panel",
+      "color": [0.6, 0.4, 0.3, 1.0],
+      "roughness": 0.35
+    },
+    {
+      "id": "glass_front",
+      "name": "Glass Front",
+      "color": [0.95, 0.95, 0.95, 1.0],
+      "roughness": 0.15
+    }
+  ],
+  "countertop_styles": [
+    {
+      "id": "granite_black",
+      "name": "Black Granite",
+      "color": [0.1, 0.1, 0.1, 1.0],
+      "roughness": 0.2,
+      "metallic": 0.1
+    },
+    {
+      "id": "marble_white",
+      "name": "White Marble",
+      "color": [0.95, 0.95, 0.95, 1.0],
+      "roughness": 0.15,
+      "metallic": 0.05
+    },
+    {
+      "id": "quartz_gray",
+      "name": "Gray Quartz",
+      "color": [0.5, 0.5, 0.5, 1.0],
+      "roughness": 0.25,
+      "metallic": 0.1
+    },
+    {
+      "id": "butcher_block",
+      "name": "Butcher Block",
+      "color": [0.7, 0.5, 0.3, 1.0],
+      "roughness": 0.4,
+      "metallic": 0.0
+    }
+  ],
+  "camera_views": {
+    "KITCHEN_WIDE": {
+      "location": [-8, -8, 4],
+      "rotation": [1.1, 0, -0.785],
+      "description": "Wide angle view of entire kitchen"
+    },
+    "KITCHEN_DEPTH": {
+      "location": [0, -10, 3],
+      "rotation": [1.2, 0, 0],
+      "description": "Depth view showing perspective"
+    },
+    "KITCHEN_LAYOUT": {
+      "location": [0, 0, 12],
+      "rotation": [0, 0, 0],
+      "description": "Top-down layout view"
+    },
+    "KITCHEN_AERIAL": {
+      "location": [-5, -5, 8],
+      "rotation": [0.8, 0, -0.785],
+      "description": "Aerial 45-degree view"
+    },
+    "KITCHEN_ISLAND": {
+      "location": [3, -6, 2],
+      "rotation": [1.3, 0, 0.5],
+      "description": "Close-up of kitchen island"
+    }
+  }
+}
