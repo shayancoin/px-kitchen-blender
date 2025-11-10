@@ -1,0 +1,81 @@
+{
+  "doors": {
+    "Fenix-Ingo-Black": {
+      "token": "$DFIB",
+      "hex": "#111214",
+      "img": "/materials/doors/Fenix-Ingo-Black.webp",
+      "jpg": "/materials/doors/Fenix-Ingo-Black.jpg",
+      "multiplier": 1.0
+    },
+    "Fenix-Kos-White": {
+      "token": "$DFKW",
+      "hex": "#F5F4F2",
+      "img": "/materials/doors/Fenix-Kos-White.webp",
+      "jpg": "/materials/doors/Fenix-Kos-White.jpg",
+      "multiplier": 1.0
+    },
+    "Fenix-London-Grey": {
+      "token": "$DFLG",
+      "hex": "#7D868E",
+      "img": "/materials/doors/Fenix-London-Grey.webp",
+      "jpg": "/materials/doors/Fenix-London-Grey.jpg",
+      "multiplier": 1.0
+    },
+    "Fenix-Hamilton-Steel": {
+      "token": "$DFHS",
+      "hex": "#8D8F91",
+      "img": "/materials/doors/Fenix-Hamilton-Steel.webp",
+      "jpg": "/materials/doors/Fenix-Hamilton-Steel.jpg",
+      "multiplier": 1.2
+    }
+  },
+  "tops": {
+    "Dekton-Sirius-Matt": {
+      "token": "$CDSM",
+      "hex": "#1A1A1A",
+      "img": "/materials/tops/Dekton-Sirius-Matt.webp",
+      "jpg": "/materials/tops/Dekton-Sirius-Matt.jpg",
+      "multiplier": 1.1,
+      "repeatUV": [
+        0.5,
+        0.5
+      ]
+    },
+    "Dekton-Zenith-Matt": {
+      "token": "$CDZM",
+      "hex": "#EEECEA",
+      "img": "/materials/tops/Dekton-Zenith-Matt.webp",
+      "jpg": "/materials/tops/Dekton-Zenith-Matt.jpg",
+      "multiplier": 1.1,
+      "repeatUV": [
+        0.5,
+        0.5
+      ]
+    },
+    "Marble-Super-White": {
+      "token": "$CMSW",
+      "hex": "#EDEAE6",
+      "img": "/materials/tops/Marble-Super-White.webp",
+      "jpg": "/materials/tops/Marble-Super-White.jpg",
+      "multiplier": 1.4,
+      "repeatUV": [
+        0.5,
+        0.5
+      ]
+    },
+    "Marble-Calacatta": {
+      "token": "$CMCA",
+      "hex": "#F2EFEA",
+      "img": "/materials/tops/Marble-Calacatta.webp",
+      "jpg": "/materials/tops/Marble-Calacatta.jpg",
+      "multiplier": 1.6,
+      "repeatUV": [
+        0.5,
+        0.5
+      ]
+    }
+  }
+}
+
+
+
