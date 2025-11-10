@@ -1,0 +1,8 @@
+# Python standard library only - no external dependencies needed
+# The script uses only built-in modules:
+# - json
+# - os
+# - socket
+# - time
+# - pathlib
+# - typing
