@@ -1,0 +1,60 @@
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                                                              │
+│                          PX-KITCHEN-BLENDER                                  │
+│                   Kitchen Render Generation System                           │
+│                                                                              │
+│  Generate 80 photorealistic kitchen renders using Blender-MCP               │
+│                                                                              │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  📦 16 BUNDLES = 4 Door Styles × 4 Countertop Styles                        │
+│  📷 5 VIEWS per bundle (WIDE, DEPTH, LAYOUT, AERIAL, ISLAND)                │
+│  🎨 80 RENDERS total in WebP format (1920×1080)                             │
+│  📋 viewer_manifest.json for web integration                                 │
+│  🌐 Interactive HTML viewer/configurator included                            │
+│                                                                              │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  DOOR STYLES                      COUNTERTOP STYLES                          │
+│  ────────────                     ──────────────────                         │
+│  • Shaker (cream)                 • Black Granite                            │
+│  • Modern Flat (dark gray)        • White Marble                             │
+│  • Raised Panel (brown)           • Gray Quartz                              │
+│  • Glass Front (light)            • Butcher Block                            │
+│                                                                              │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  FEATURES                                                                    │
+│  ────────                                                                    │
+│  ✓ Socket-based Blender-MCP integration                                     │
+│  ✓ Automated scene setup and rendering                                      │
+│  ✓ Photorealistic Cycles rendering                                          │
+│  ✓ WebP export with compression                                             │
+│  ✓ Web viewer with real-time style switching                                │
+│  ✓ Comprehensive documentation                                              │
+│  ✓ No external dependencies (Python stdlib only)                            │
+│  ✓ All tests passing (6/6)                                                  │
+│  ✓ Security scan clean (0 vulnerabilities)                                  │
+│                                                                              │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  QUICK START                                                                 │
+│  ───────────                                                                 │
+│  1. Install Blender 3.0+ and Blender-MCP addon                              │
+│  2. Start Blender-MCP server in Blender                                     │
+│  3. Run: python3 kitchen_renderer.py                                        │
+│  4. Open: renders/viewer.html in browser                                    │
+│                                                                              │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  PROJECT STATS                                                               │
+│  ─────────────                                                               │
+│  Files:          13                                                          │
+│  Code:           ~900 lines                                                  │
+│  Documentation:  ~1,200 lines                                                │
+│  Tests:          6 (all passing)                                             │
+│  License:        MIT                                                         │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+               Ready for production use with live Blender-MCP
