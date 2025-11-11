@@ -1,0 +1,96 @@
+{
+  "version": "1.0",
+  "views": [
+    "KITCHEN_WIDE",
+    "KITCHEN_DEPTH",
+    "KITCHEN_LAYOUT",
+    "KITCHEN_AERIAL",
+    "KITCHEN_ISLAND"
+  ],
+  "options": {
+    "doors": [
+      {
+        "id": "$DFHS",
+        "name": "Fenix-Hamilton-Steel",
+        "path": "/workspace/materials/doors/Fenix-Hamilton-Steel.jpg"
+      },
+      {
+        "id": "$DFIB",
+        "name": "Fenix-Ingo-Black",
+        "path": "/workspace/materials/doors/Fenix-Ingo-Black.jpg"
+      },
+      {
+        "id": "$DFKW",
+        "name": "Fenix-Kos-White",
+        "path": "/workspace/materials/doors/Fenix-Kos-White.jpg"
+      },
+      {
+        "id": "$DFLG",
+        "name": "Fenix-London-Grey",
+        "path": "/workspace/materials/doors/Fenix-London-Grey.jpg"
+      }
+    ],
+    "countertops": [
+      {
+        "id": "$CDSM",
+        "name": "Dekton-Sirius-Matt",
+        "path": "/workspace/materials/tops/Dekton-Sirius-Matt.jpg"
+      },
+      {
+        "id": "$CDZM",
+        "name": "Dekton-Zenith-Matt",
+        "path": "/workspace/materials/tops/Dekton-Zenith-Matt.jpg"
+      },
+      {
+        "id": "$CMCA",
+        "name": "Marble-Calacatta",
+        "path": "/workspace/materials/tops/Marble-Calacatta.jpg"
+      },
+      {
+        "id": "$CMSW",
+        "name": "Marble-Super-White",
+        "path": "/workspace/materials/tops/Marble-Super-White.jpg"
+      }
+    ],
+    "carcass": [
+      {
+        "id": "$CARC",
+        "name": "Slate Carcass",
+        "color": "#4C4E52"
+      }
+    ]
+  },
+  "bundles": [
+    {
+      "id": "PREVIEW_DFHS_CDSM",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "PREVIEW_DFHS_CDSM/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "PREVIEW_DFHS_CDSM/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "PREVIEW_DFHS_CDSM/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "PREVIEW_DFHS_CDSM/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "PREVIEW_DFHS_CDSM/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFHS",
+        "top": "$CDSM",
+        "carcass": "$CARC",
+        "id": "PREVIEW_DFHS_CDSM"
+      }
+    }
+  ]
+}

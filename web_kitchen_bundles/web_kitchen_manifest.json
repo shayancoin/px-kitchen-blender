@@ -1,0 +1,561 @@
+{
+  "version": "1.0",
+  "views": [
+    "KITCHEN_WIDE",
+    "KITCHEN_DEPTH",
+    "KITCHEN_LAYOUT",
+    "KITCHEN_AERIAL",
+    "KITCHEN_ISLAND"
+  ],
+  "options": {
+    "doors": [
+      {
+        "id": "$DFHS",
+        "name": "Fenix-Hamilton-Steel",
+        "path": "/workspace/materials/doors/Fenix-Hamilton-Steel.jpg"
+      },
+      {
+        "id": "$DFIB",
+        "name": "Fenix-Ingo-Black",
+        "path": "/workspace/materials/doors/Fenix-Ingo-Black.jpg"
+      },
+      {
+        "id": "$DFKW",
+        "name": "Fenix-Kos-White",
+        "path": "/workspace/materials/doors/Fenix-Kos-White.jpg"
+      },
+      {
+        "id": "$DFLG",
+        "name": "Fenix-London-Grey",
+        "path": "/workspace/materials/doors/Fenix-London-Grey.jpg"
+      }
+    ],
+    "countertops": [
+      {
+        "id": "$CDSM",
+        "name": "Dekton-Sirius-Matt",
+        "path": "/workspace/materials/tops/Dekton-Sirius-Matt.jpg"
+      },
+      {
+        "id": "$CDZM",
+        "name": "Dekton-Zenith-Matt",
+        "path": "/workspace/materials/tops/Dekton-Zenith-Matt.jpg"
+      },
+      {
+        "id": "$CMCA",
+        "name": "Marble-Calacatta",
+        "path": "/workspace/materials/tops/Marble-Calacatta.jpg"
+      },
+      {
+        "id": "$CMSW",
+        "name": "Marble-Super-White",
+        "path": "/workspace/materials/tops/Marble-Super-White.jpg"
+      }
+    ],
+    "carcass": [
+      {
+        "id": "$CARC",
+        "name": "Slate Carcass",
+        "color": "#4C4E52"
+      }
+    ]
+  },
+  "bundles": [
+    {
+      "id": "DFHS_CDSM",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "DFHS_CDSM/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "DFHS_CDSM/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "DFHS_CDSM/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "DFHS_CDSM/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "DFHS_CDSM/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFHS",
+        "top": "$CDSM",
+        "carcass": "$CARC",
+        "id": "DFHS_CDSM"
+      }
+    },
+    {
+      "id": "DFHS_CDZM",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "DFHS_CDZM/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "DFHS_CDZM/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "DFHS_CDZM/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "DFHS_CDZM/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "DFHS_CDZM/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFHS",
+        "top": "$CDZM",
+        "carcass": "$CARC",
+        "id": "DFHS_CDZM"
+      }
+    },
+    {
+      "id": "DFHS_CMCA",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "DFHS_CMCA/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "DFHS_CMCA/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "DFHS_CMCA/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "DFHS_CMCA/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "DFHS_CMCA/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFHS",
+        "top": "$CMCA",
+        "carcass": "$CARC",
+        "id": "DFHS_CMCA"
+      }
+    },
+    {
+      "id": "DFHS_CMSW",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "DFHS_CMSW/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "DFHS_CMSW/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "DFHS_CMSW/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "DFHS_CMSW/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "DFHS_CMSW/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFHS",
+        "top": "$CMSW",
+        "carcass": "$CARC",
+        "id": "DFHS_CMSW"
+      }
+    },
+    {
+      "id": "DFIB_CDSM",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "DFIB_CDSM/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "DFIB_CDSM/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "DFIB_CDSM/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "DFIB_CDSM/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "DFIB_CDSM/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFIB",
+        "top": "$CDSM",
+        "carcass": "$CARC",
+        "id": "DFIB_CDSM"
+      }
+    },
+    {
+      "id": "DFIB_CDZM",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "DFIB_CDZM/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "DFIB_CDZM/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "DFIB_CDZM/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "DFIB_CDZM/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "DFIB_CDZM/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFIB",
+        "top": "$CDZM",
+        "carcass": "$CARC",
+        "id": "DFIB_CDZM"
+      }
+    },
+    {
+      "id": "DFIB_CMCA",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "DFIB_CMCA/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "DFIB_CMCA/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "DFIB_CMCA/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "DFIB_CMCA/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "DFIB_CMCA/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFIB",
+        "top": "$CMCA",
+        "carcass": "$CARC",
+        "id": "DFIB_CMCA"
+      }
+    },
+    {
+      "id": "DFIB_CMSW",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "DFIB_CMSW/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "DFIB_CMSW/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "DFIB_CMSW/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "DFIB_CMSW/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "DFIB_CMSW/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFIB",
+        "top": "$CMSW",
+        "carcass": "$CARC",
+        "id": "DFIB_CMSW"
+      }
+    },
+    {
+      "id": "DFKW_CDSM",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "DFKW_CDSM/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "DFKW_CDSM/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "DFKW_CDSM/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "DFKW_CDSM/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "DFKW_CDSM/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFKW",
+        "top": "$CDSM",
+        "carcass": "$CARC",
+        "id": "DFKW_CDSM"
+      }
+    },
+    {
+      "id": "DFKW_CDZM",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "DFKW_CDZM/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "DFKW_CDZM/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "DFKW_CDZM/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "DFKW_CDZM/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "DFKW_CDZM/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFKW",
+        "top": "$CDZM",
+        "carcass": "$CARC",
+        "id": "DFKW_CDZM"
+      }
+    },
+    {
+      "id": "DFKW_CMCA",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "DFKW_CMCA/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "DFKW_CMCA/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "DFKW_CMCA/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "DFKW_CMCA/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "DFKW_CMCA/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFKW",
+        "top": "$CMCA",
+        "carcass": "$CARC",
+        "id": "DFKW_CMCA"
+      }
+    },
+    {
+      "id": "DFKW_CMSW",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "DFKW_CMSW/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "DFKW_CMSW/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "DFKW_CMSW/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "DFKW_CMSW/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "DFKW_CMSW/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFKW",
+        "top": "$CMSW",
+        "carcass": "$CARC",
+        "id": "DFKW_CMSW"
+      }
+    },
+    {
+      "id": "DFLG_CDSM",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "DFLG_CDSM/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "DFLG_CDSM/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "DFLG_CDSM/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "DFLG_CDSM/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "DFLG_CDSM/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFLG",
+        "top": "$CDSM",
+        "carcass": "$CARC",
+        "id": "DFLG_CDSM"
+      }
+    },
+    {
+      "id": "DFLG_CDZM",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "DFLG_CDZM/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "DFLG_CDZM/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "DFLG_CDZM/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "DFLG_CDZM/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "DFLG_CDZM/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFLG",
+        "top": "$CDZM",
+        "carcass": "$CARC",
+        "id": "DFLG_CDZM"
+      }
+    },
+    {
+      "id": "DFLG_CMCA",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "DFLG_CMCA/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "DFLG_CMCA/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "DFLG_CMCA/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "DFLG_CMCA/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "DFLG_CMCA/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFLG",
+        "top": "$CMCA",
+        "carcass": "$CARC",
+        "id": "DFLG_CMCA"
+      }
+    },
+    {
+      "id": "DFLG_CMSW",
+      "files": [
+        {
+          "view": "KITCHEN_WIDE",
+          "rel": "DFLG_CMSW/KITCHEN_WIDE.webp"
+        },
+        {
+          "view": "KITCHEN_DEPTH",
+          "rel": "DFLG_CMSW/KITCHEN_DEPTH.webp"
+        },
+        {
+          "view": "KITCHEN_LAYOUT",
+          "rel": "DFLG_CMSW/KITCHEN_LAYOUT.webp"
+        },
+        {
+          "view": "KITCHEN_AERIAL",
+          "rel": "DFLG_CMSW/KITCHEN_AERIAL.webp"
+        },
+        {
+          "view": "KITCHEN_ISLAND",
+          "rel": "DFLG_CMSW/KITCHEN_ISLAND.webp"
+        }
+      ],
+      "materials": {
+        "door": "$DFLG",
+        "top": "$CMSW",
+        "carcass": "$CARC",
+        "id": "DFLG_CMSW"
+      }
+    }
+  ]
+}
